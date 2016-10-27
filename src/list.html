@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/list.css"/>
+    <script>
+        +function () {
+            var width = document.documentElement.clientWidth;
+            var html = document.getElementsByTagName("html")[0];
+            html.style.fontSize = (width / 7.5) + "px";
+        }();
+    </script>
+</head>
+<body>
+<header>
+    <span>&lt;</span>
+    <p>笑话大王</p>
+</header>
+<artical>
+    <ul class="ul">
+        <li>爱情篇</li>
+        <li>恐怖篇</li>
+        <li>家庭篇</li>
+        <li>校园篇</li>
+        <li>儿童篇</li>
+        <li>医疗篇</li>
+        <li>愚人篇</li>
+        <li>交往篇</li>
+        <li>动物篇</li>
+        <li>军事篇</li>
+        <li>民间篇</li>
+        <li>经营篇</li>
+    </ul>
+</artical>
+</body>
+<script>
+    window.onload=function () {
+          document.getElementsByClassName("ul")[0].onclick=function (e) {
+              if(e.target!=this){
+                  window.location.href="http://localhost:3000/content.html"
+              }
+          }
+		  document.getElementsByTagName("span")[0].onclick=function (e) {
+                  window.location.href="http://localhost:3000/index.html"
+          }
+    }
+</script>
+</html>

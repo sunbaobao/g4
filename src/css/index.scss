@@ -1,0 +1,147 @@
+@charset "utf-8";
+//背景色
+$bg :#b79966;
+//字体色
+$color:#fcf2f3;
+$color8:#b0ac6d;
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+li,ul{
+    list-style:none;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url("../font/iconfont.eot");
+  src: url("../font/iconfont.eot?#iefix") format("embedded-opentype"),
+  url("../font/iconfont.woff") format("woff"), url("../font/iconfont.ttf") format("truetype"), url("../font/iconfont.svg#iconfont") format("svg"); }
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:2.0rem;
+    font-style:normal;
+    color:#fff;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+
+    }
+
+html{
+    font-size: 7.5rem;
+}
+body{
+    background:#f0f5f9;
+}
+header{
+    height:1.08rem ;
+    line-height: 1.08rem;
+    font-size: 0.43rem;
+    background:$bg;
+    color: $color;
+    text-align: center;
+    p{
+        text-align: center;
+    }
+}
+artical{
+		ul{
+			margin-top:0.2rem;
+			width:100%;
+			display:flex;
+			flex-wrap:wrap;
+			justify-content:center;
+			padding:0 12%; 
+
+		   li{ 
+				display:flex;
+				width:50%;
+				justify-content:center;
+				align-items:center;
+				flex-direction:column;
+				margin-top:0.4rem;
+				span{
+					font-size:0.5rem;
+					color:$color8;
+				}
+				i{  
+				   text-align:center;
+					display:block; 
+					width:2rem;
+					height:2rem;
+					border-radius:0.4rem;
+					line-height:2rem;
+					margin-bottom:0.1rem;
+				}
+				.iconfont1{
+					background:#936227;
+				}
+				.iconfont2{
+					background:#47777b;
+				}
+				.iconfont3{
+					background:#567f30;
+				}
+				.iconfont4{
+					background:#56481e;
+				}
+				.iconfont5{
+					background:#8f2f00;
+				}
+				.iconfont6{
+					background:#45124a;
+				}
+
+		   }
+		} 
+}
+
+$color7:#fff;
+$color6:#000;
+$bg:#b79966 ;
+$color1:rgb(145,128,185);
+$color2:rgb(89,209,61);
+$color3:rgb(63,210,178);
+$color4:rgb(215,42,124);
+$color5:rgb(15,170,198);
+footer{
+	
+//  width: 100%;
+    position: fixed;
+    left:0;right: 0;
+    bottom: 0;
+    overflow: hidden;
+    height: 1.48rem;
+    background: $bg;
+    ul{
+        width: 100%;
+        height:100%;
+        margin-top:0;
+        display: flex;
+        
+        li{
+            list-style: none;
+            color: $color;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .iconfont{
+				font-size:0.7rem;
+                border-radius:5%;
+            }
+            p{
+              line-height:0.5rem;
+                font-size: 0.32rem;
+                color:$color7;
+             }
+
+        }
+      li.active .iconfont,li.active p{
+        color:$color1 ;
+      }
+    }
+}

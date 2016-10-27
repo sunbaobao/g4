@@ -1,0 +1,52 @@
+@charset "utf-8";
+//背景色
+$bg :#b79966;
+//字体色
+$color :#fcf2f3;
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 7.5rem;
+   }
+header{
+    height:1.08rem ;
+    line-height: 1.08rem;
+    font-size: 0.43rem;
+    background:$bg;
+    color: $color;
+    text-align: center;
+    p{
+        text-align: center;
+    }
+    span{
+        font-weight: 600;
+        float: left;
+        margin-left: 0.43rem;
+    }
+   }
+.ul{
+    margin: 0;
+    padding: 0;
+    margin-top:0.5rem;
+    list-style: none;
+    overflow: hidden;
+    li{
+        margin: 0;
+        padding: 0;
+        width: 3.12rem;
+        height:1.53rem;
+        text-align: center;
+        line-height: 1.53rem;
+        color: $color;
+        background: $bg;
+        font-size:0.43rem ;
+        float: left;
+        margin-left:0.43rem ;
+        margin-bottom: 0.43rem;
+    }
+}
+    

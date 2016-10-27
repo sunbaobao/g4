@@ -1,0 +1,64 @@
+@charset "utf-8";
+*{margin:0;padding:0;border:0;}
+html{
+    font-size: 7.5rem;
+  }
+  
+  @font-face {font-family: 'iconfont';/*kkk*/
+    src: url('../../font/iconfont.eot'); /* IE9*/
+    src: url('../../font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../../font/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../../font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../../font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:0.70rem;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+    
+
+  
+$color1:#fff;
+$color6:#000;
+$bg:#b79966 ;
+$color1:rgb(145,128,185);
+$color2:rgb(89,209,61);
+$color3:rgb(63,210,178);
+$color4:rgb(215,42,124);
+$color5:rgb(15,170,198);
+footer{
+//  width: 100%;
+    position: fixed;
+    left:0;right: 0;
+    bottom: 0;
+    overflow: hidden;
+    height: 1.48rem;
+    background: $bg;
+    ul{
+        width: 100%;
+        height:100%;
+        margin-top:0;
+        display: flex;
+        
+        li{
+            list-style: none;
+            color: $color1;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            i{
+                border-radius:5%;
+            }
+            p{
+                font-size: 0.32rem;
+                color:$color1;
+             }
+
+        }
+    }
+}
+

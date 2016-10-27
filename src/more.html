@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/more.css"/>
+		<script>
+			+function(){
+				var width = document.documentElement.clientWidth;
+				var html = document.getElementsByTagName("html")[0];
+				html.style.fontSize = (width / 7.5) + "px";
+			}();
+		</script>
+	</head>
+	<body>
+		<header>
+			<p>更多</p>
+		</header>
+		<section>
+			<div>
+				<p>亲，给个好评吧</p>
+				<p>分享给好友</p>
+			</div>
+			<div>
+				<p>系统设置</p>
+				<p>检查更新</p>
+				<p>关闭推送</p>
+			</div>
+			<div>
+				<p>反馈</p>
+				<p>关于</p>
+			</div>
+		</section>
+		<footer>
+			<ul>
+				<li><a href="/index.html">
+					<i class="iconfont">&#xe687;</i>
+					<p>笑话</p>	</a>
+				</li>
+				<li>
+					<i class="iconfont">&#xe60d;</i>
+					<p>内涵</p>
+				</li>
+				<li class=>
+					<i class="iconfont">&#xe665;</i>
+					<p>段子</p>
+				</li>
+				<li class id="img">
+					<i class="iconfont">&#xe600;</i>
+					<p>图片</p>
+				</li>
+				<li class="active">
+					<i class="iconfont">&#xe64c;</i>
+					<p>更多</p>
+				</li>
+			</ul>
+		</footer>
+	</body>
+<script>
+	window.onload=function () {
+		document.getElementById("img").onclick=function () {
+			window.location.href="/contentImg.html"
+		};
+	};
+
+</script>
+</html>
