@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <script>
+        +function () {
+            var width = document.documentElement.clientWidth;
+            var html = document.getElementsByTagName("html")[0];
+            html.style.fontSize = (width / 7.5) + "px";
+        }();
+    </script>
+</head>
+
+<body>
+<header>
+    <p>笑话大王</p>
+</header>
+<artical>
+    <ul class="ul">
+        <li><i class="iconfont iconfont1">&#xe665;</i><span>笑话大王</span></li>
+        <li><i class="iconfont iconfont2">&#xe604;</i><span>段子大王</span></li>
+        <li><i class="iconfont iconfont3">&#xe600;</i><span>漫画大王</span></li>
+        <li><i class="iconfont iconfont4">&#xe687;</i><span>娱乐世界</span></li>
+        <li><i class="iconfont iconfont5">&#xe609;</i><span>乐疯笑话</span></li>
+        <li><i class="iconfont iconfont6">&#xe649;</i><span>爆笑笑话</span></li>
+    </ul>
+</artical>
+<footer>
+    <ul>
+        <li class="active">
+            <i class="iconfont">&#xe687;</i>
+            <p>笑话</p>
+        </li>
+        <li>
+            <i class="iconfont">&#xe60d;</i>
+            <p>内涵</p>
+        </li>
+        <li >
+            <i class="iconfont" onclick="window.location.href = '/list.html'">&#xe665;</i>
+            <p>段子</p>
+        </li>
+        <li id="img">
+            <i class="iconfont">&#xe600;</i>
+            <p>图片</p>
+        </li>
+        <li id="more">
+            <i class="iconfont">&#xe64c;</i>
+            <p>更多</p>
+        </li>
+    </ul>
+</footer>
+<script>
+    window.onload = function () {
+        document.getElementsByClassName("ul")[0].onclick = function (e) {
+            if (e.target != this) {
+                window.location.href = "/list.html"
+            }
+
+        };
+        document.getElementById("img").onclick=function () {
+            window.location.href="/contentImg.html"
+        };
+        function dz() {
+            window.location.href="/list.html"
+        }
+        document.getElementById("more").onclick=function () {
+            window.location.href="/more.html"
+        }
+    }
+</script>
+</body>
+</html>

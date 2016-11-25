@@ -1,0 +1,35 @@
+/* 定义一个变量使用 @ 符号 */
+.box {
+  /* & 符号表示当前层 */
+}
+.box div {
+  width: 100px;
+}
+.box::after {
+  content: '';
+  clear: both;
+  width: 0;
+  display: block;
+}
+.box:hover {
+  color: #FF0000;
+}
+/* 声明混合 必须以 . 开头 */
+.div {
+  border: 1px solid #000000;
+  /*引用混合*/
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+}
+.wrap {
+  zoom: 1;
+}
+.wrap:after {
+  content: '';
+  display: block;
+}

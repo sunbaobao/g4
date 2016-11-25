@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box; }
+
+li, ul {
+  list-style: none; }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("../font/iconfont.eot");
+  src: url("../font/iconfont.eot?#iefix") format("embedded-opentype"), url("../font/iconfont.woff") format("woff"), url("../font/iconfont.ttf") format("truetype"), url("../font/iconfont.svg#iconfont") format("svg"); }
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 2.0rem;
+  font-style: normal;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+html {
+  font-size: 7.5rem; }
+
+body {
+  background: #f0f5f9; }
+
+header {
+  height: 1.08rem;
+  line-height: 1.08rem;
+  font-size: 0.43rem;
+  background: #b79966;
+  color: #fcf2f3;
+  text-align: center; }
+  header p {
+    text-align: center; }
+
+artical ul {
+  margin-top: 0.2rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 12%; }
+  artical ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0.4rem; }
+    artical ul li span {
+      font-size: 0.5rem;
+      color: #b0ac6d; }
+    artical ul li i {
+      text-align: center;
+      display: block;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 0.4rem;
+      line-height: 2rem;
+      margin-bottom: 0.1rem; }
+    artical ul li .iconfont1 {
+      background: #936227; }
+    artical ul li .iconfont2 {
+      background: #47777b; }
+    artical ul li .iconfont3 {
+      background: #567f30; }
+    artical ul li .iconfont4 {
+      background: #56481e; }
+    artical ul li .iconfont5 {
+      background: #8f2f00; }
+    artical ul li .iconfont6 {
+      background: #45124a; }
+
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  height: 1.48rem;
+  background: #b79966; }
+  footer ul {
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    footer ul li {
+      list-style: none;
+      color: #fcf2f3;
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      footer ul li .iconfont {
+        font-size: 0.7rem;
+        border-radius: 5%; }
+      footer ul li p {
+        line-height: 0.5rem;
+        font-size: 0.32rem;
+        color: #fff; }
+    footer ul li.active .iconfont, footer ul li.active p {
+      color: #9180b9; }
